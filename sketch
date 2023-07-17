@@ -1,0 +1,499 @@
+#include <NanitLib.h>
+
+byte buzz = P4_2;
+byte WhiteLed = P4_4;
+byte BlueLed = P4_3;
+byte GreenLed = P5_4;
+byte YellowLed = P5_3;
+byte RedLed = P5_2;
+
+void setup() {
+  Nanit_Base_Start();
+  GET_NANIT.getBataryVoltage();
+  pinMode(buzz, OUTPUT);
+  pinMode(WhiteLed, OUTPUT);
+  pinMode(BlueLed, OUTPUT);
+  pinMode(GreenLed, OUTPUT);
+  pinMode(YellowLed, OUTPUT);
+  pinMode(RedLed, OUTPUT);
+}
+
+void loop() {
+  tone(buzz, 294);
+  digitalWrite(WhiteLed, 1);
+  digitalWrite(BlueLed, 0);
+  digitalWrite(GreenLed, 0);
+  digitalWrite(YellowLed, 0);
+  digitalWrite(RedLed, 0);
+  delay(562);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(188);
+  tone(buzz, 294);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 0);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(750);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(188);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(188);
+
+
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(562);
+  tone(buzz, 494);
+  
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(188);
+  tone(buzz, 440);
+  
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 587);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 1);
+  delay(1125);
+
+
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(562);
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(188);
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(750);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+
+
+  tone(buzz, 294);
+  delay(1125);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 0);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+
+  noTone(buzz);
+  digitalWrite(buzz, 1);
+    digitalWrite(WhiteLed, 0);
+    digitalWrite(BlueLed, 0);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(1125);
+
+
+  tone(buzz, 294);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 0);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(562);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(188);
+  tone(buzz, 294);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 0);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(750);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+
+
+
+
+
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(562);
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(188);
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 587);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 1);
+  delay(1125);
+
+
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(562);
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(188);
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(750);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+
+
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(2250);
+
+
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(1125);
+
+
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(1125);
+
+
+
+
+
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(750);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+
+
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(2250);
+
+
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 494);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 1);
+    digitalWrite(RedLed, 0);
+  delay(1125);
+
+
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 440);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(1125);
+
+
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(750);
+  tone(buzz, 392);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 1);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(375);
+
+
+  tone(buzz, 330);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 1);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(1125);
+  tone(buzz, 294);
+    digitalWrite(WhiteLed, 1);
+    digitalWrite(BlueLed, 0);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(1125);
+
+  
+  noTone(buzz);
+  digitalWrite(buzz, 1);
+    digitalWrite(WhiteLed, 0);
+    digitalWrite(BlueLed, 0);
+    digitalWrite(GreenLed, 0);
+    digitalWrite(YellowLed, 0);
+    digitalWrite(RedLed, 0);
+  delay(750);
+}
